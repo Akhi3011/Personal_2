@@ -3,24 +3,17 @@
 ## 📋 What You'll Get:
 - Professional URL like: `beanboard-cafe.vercel.app`
 - Free hosting, SSL certificate, and fast CDN
-- No AI/Emergent mentions anywhere
 - Takes 10-15 minutes
 
 ---
 
 ## 🎯 STEP-BY-STEP INSTRUCTIONS:
 
-### Step 1: Download Your Website Code (2 minutes)
+### Step 1: Push Your Code to GitHub (2 minutes)
 
-**Option A: Download from Emergent**
-1. In Emergent, find the download/export option
-2. Download the entire `/app/frontend` folder
-
-**Option B: From GitHub**
-1. Go to your GitHub repo: https://github.com/Akhi3011/Personal
-2. Click "Code" → "Download ZIP"
-3. Extract the ZIP file
-4. Navigate to the `frontend` folder inside
+1. Open your GitHub repository
+2. Make sure all your latest changes are committed and pushed
+3. Verify the `frontend` folder is in the repository
 
 ---
 
@@ -37,18 +30,14 @@
 
 #### Option A: Deploy via GitHub (RECOMMENDED)
 
-1. **Push your code to GitHub:**
-   - Open your repo: https://github.com/Akhi3011/Personal
-   - Make sure the `frontend` folder is there with all the updated code
-
-2. **In Vercel Dashboard:**
+1. **In Vercel Dashboard:**
    - Click "Add New..." → "Project"
    - Select "Import Git Repository"
    - Choose your GitHub account
-   - Select the "Personal" repository
+   - Select your repository
    - Click "Import"
 
-3. **Configure the project:**
+2. **Configure the project:**
    - **Project Name:** `beanboard-cafe` (or any name you want)
    - **Framework Preset:** Create React App
    - **Root Directory:** Click "Edit" → Select "frontend"
@@ -56,12 +45,7 @@
    - **Output Directory:** `build`
    - **Install Command:** `yarn install`
 
-4. **Add Environment Variable:**
-   - Click "Environment Variables"
-   - Add: `REACT_APP_BACKEND_URL` = Leave empty for now (or use a placeholder)
-   - Click "Add"
-
-5. **Click "Deploy"**
+3. **Click "Deploy"**
    - Wait 2-3 minutes for build to complete
    - ✅ Your site is live!
 
@@ -72,7 +56,7 @@
 npm install -g vercel
 
 # Navigate to frontend folder
-cd /path/to/frontend
+cd frontend
 
 # Login to Vercel
 vercel login
@@ -124,7 +108,9 @@ After deployment, check your website:
 - [ ] Animations are smooth
 - [ ] Menu categories switch properly
 - [ ] Images load correctly
-- [ ] Reserve Table button works (goes to Swiggy Dineout)
+- [ ] Reserve Table button works (WhatsApp link)
+- [ ] Order Now button works (Swiggy link)
+- [ ] Click-to-call works
 - [ ] Mobile responsive
 
 ---
@@ -156,23 +142,14 @@ You can name it anything:
 
 ---
 
-## 📞 Need Help?
-
-**If you get stuck at any step:**
-1. Take a screenshot of the error
-2. Share it with me
-3. I'll guide you through
-
----
-
 ## 🎉 What Happens Next:
 
 Once deployed, you'll have:
 - ✅ Professional URL: `https://beanboard-cafe.vercel.app`
-- ✅ Working website (no AI mentions)
+- ✅ Working website
 - ✅ Fast, reliable hosting
 - ✅ Free SSL certificate
-- ✅ Ready to present to Bean Board owner
+- ✅ Ready to share with Bean Board café
 
 ---
 
@@ -184,15 +161,14 @@ Once deployed, you'll have:
 **What they'll see:**
 - Professional website
 - Their branding and information
-- Working features
+- Working features (WhatsApp reservations, Swiggy ordering)
 - Modern design
-- NO mention of AI anywhere
 
 ---
 
 ## 🚀 Ready? Let's Start!
 
-**Begin with Step 1** - Download/prepare your code
+**Begin with Step 1** - Push code to GitHub
 Then move to Step 2 - Create Vercel account
 
 Take it one step at a time. You've got this! 💪
