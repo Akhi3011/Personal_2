@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee, Instagram, Facebook, Mail } from 'lucide-react';
+import { Instagram, Facebook, Mail } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -9,14 +9,23 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
-              <Coffee size={32} />
-              <div>
+              <img 
+                src="/assets/beanboard-logo.png" 
+                alt="Bean Board" 
+                className="footer-logo-img"
+                onError={(e) => {
+                  // Fallback to text logo if image fails to load
+                  e.target.style.display = 'none';
+                  e.target.parentElement.querySelector('.footer-logo-fallback').style.display = 'flex';
+                }}
+              />
+              <div className="footer-logo-fallback" style={{ display: 'none' }}>
                 <h3 className="heading-3">Bean Board</h3>
                 <p className="caption">బీన్ బోర్డు – సీతమ్మధార</p>
               </div>
             </div>
             <p className="body-small footer-tagline">
-              Where every cup tells a story
+              Roasted with Passion, Served with Community!
             </p>
           </div>
 

@@ -33,6 +33,20 @@
   gap: 0.75rem;
 }
 
+.header-logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.logo-text-fallback {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .logo-text {
   font-size: 1.25rem;
   font-weight: 600;
@@ -132,6 +146,11 @@
 
   .logo-text {
     font-size: 1.125rem;
+  }
+
+  .header-logo-img {
+    height: 40px;
+    max-width: 150px;
   }
 
   .btn-primary {

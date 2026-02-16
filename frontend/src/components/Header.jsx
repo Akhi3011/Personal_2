@@ -25,8 +25,20 @@ const Header = () => {
     <header className={`header-nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
         <div className="logo-section">
-          <h1 className="logo-text">Bean Board</h1>
-          <span className="logo-telugu">బీన్ బోర్డు</span>
+          <img 
+            src="/assets/beanboard-logo.png" 
+            alt="Bean Board - Roasted with Passion, Served with Community" 
+            className="header-logo-img"
+            onError={(e) => {
+              // Fallback to text logo if image fails to load
+              e.target.style.display = 'none';
+              e.target.nextElementSibling.style.display = 'flex';
+            }}
+          />
+          <div className="logo-text-fallback" style={{ display: 'none' }}>
+            <h1 className="logo-text">Bean Board</h1>
+            <span className="logo-telugu">బీన్ బోర్డు</span>
+          </div>
         </div>
 
         <nav className="nav-links">

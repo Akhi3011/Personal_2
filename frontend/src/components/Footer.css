@@ -25,6 +25,21 @@
   margin-bottom: 0.5rem;
 }
 
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  max-width: 250px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes logo white to match footer theme */
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo-fallback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .footer-logo h3,
 .footer-logo p {
   color: white;
@@ -137,6 +152,11 @@
   .footer-links {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .footer-logo-img {
+    height: 50px;
+    max-width: 200px;
   }
 
   .footer-bottom {
